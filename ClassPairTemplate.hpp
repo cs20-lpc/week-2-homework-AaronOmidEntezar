@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // TODO: Create a class template named Pair
 // It should accept TWO different data types
@@ -10,11 +11,14 @@ private:
     T2 second;
 
 public:
-    // TODO: Write PROTOTYPE for  constructor that initializes both values
+    // TODO: Write PROTOTYPE for constructor that initializes both values
+    Pair(T1 f, T2 s);
 
-    // TODO: Write PROTOTYPE for  function named print()
+    // TODO: Write PROTOTYPE for function named print()
     // It should display both values in the format:
     // (value1, value2)
+    void print() const;
 };
 
 // TO DO: Include implementation file here
+#include "ClassPairTemplate.tpp"
